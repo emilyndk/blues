@@ -1,9 +1,15 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
+
+
 ---
 
 
 <style>
+
+
+  @import url("https://use.typekit.net/prt2ztm.css");
+
     body{
         background-color: rgb(54, 52, 56);
     }
@@ -11,20 +17,77 @@ import MainLayout from "../layouts/MainLayout.astro";
     p, h1, h2{
         color: rgb(216, 216, 216);
     }
+
+    .hero{
+        background-image: url(/public/img/unsplashblues.jpg);
+        background-size: cover; /* Sørger for, at billedet dækker hele sektionen */
+    background-position: center; /* Centrerer billedet */
+    background-repeat: no-repeat; /* Undgår gentagelse af billedet */
+    height: 100vh; /* Gør hero-sektionen lige så høj som viewporten */
+    background-attachment: fixed;
+   
+
+    }
+ h1{
+    font-family: "rhythm-one-solid", sans-serif;
+font-weight: 400;
+font-style: normal;
+
+}
+
+.to, .tre, .fire{
+
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height:100vh;
+background-attachment: fixed;
+}
+
+.to{
+    background-image:  url(/public/img/istockblues.jpg);
+}
+
+.tre{
+    background-image: url(/public/img/fireflydarkbluerecordplayer.jpg);
+}
+.fire{
+    background-image: url(/public/img/pexelsblues.jpg);
+}
+
+
+    img{
+    
+    }
+
+
 </style>
 
 
 <MainLayout title="Sjælens musik" description="Artikel om musikgenren blues">
-	<article class="grid mx-auto container gap-8 pt-8 prose">
-        <h1 class="">Sjælens musik</h1>
+
+<section class="hero p-48 flex flex-row justify-end ">
+<div>
+    <h1 class="text-6xl  w-full font-mono">Sjælens musik</h1>
+    <p class="text-xs ">En rejse gennem musikkens mest følelsesladede genre. <br> Fra de dybeste sjælerøst til rå, ærlige melodier.</p>
+</div>
+</section>
+
+	<article class="grid mx-auto container gap-8 pt-8 prose mb-8">
+       
 
 
         <h2>Hvad er Blues?</h2>
 
-        <p>Blues er en musikgenre, der stammer fra de afroamerikanske samfund i den amerikanske sydstat omkring slutningen af det 19. århundrede. Kendetegnet ved sine udtryksfulde tekster, sjælefulde melodier og distinkte rytmer formidler bluesmusik ofte temaer som sorg, kamp og hjertesorg. Genren har typisk en tolv-takts struktur, brugen af blå toner (fladede tredje, femte og syvende toner) og et kald-og-svar mønster, der afspejler dens rødder i afrikanske musiktraditioner. Kunstnere bruger ofte guitarer, harmonikaer og klaverer til at skabe en rig, følelsesladet lyd, der resonerer dybt hos lytterne.</p>
+        <p class="">Blues er en musikgenre, der stammer fra de afroamerikanske samfund i den amerikanske sydstat omkring slutningen af det 19. århundrede. Kendetegnet ved sine udtryksfulde tekster, sjælefulde melodier og distinkte rytmer formidler bluesmusik ofte temaer som sorg, kamp og hjertesorg. Genren har typisk en tolv-takts struktur, brugen af blå toner (fladede tredje, femte og syvende toner) og et kald-og-svar mønster, der afspejler dens rødder i afrikanske musiktraditioner. Kunstnere bruger ofte guitarer, harmonikaer og klaverer til at skabe en rig, følelsesladet lyd, der resonerer dybt hos lytterne.</p>
 
       
-<img src="/img/istockblues.jpg" alt="Blues">
+
+    </article>
+
+<section class="to"></section>
+
+<article class="grid mx-auto container gap-8 pt-8 prose">
 
         <hr>
 
@@ -37,7 +100,9 @@ import MainLayout from "../layouts/MainLayout.astro";
 
 
         <hr>
-
+</article>
+        <section class="tre"></section>
+<article class="grid mx-auto container gap-8 pt-8 prose">
         <h2>Blues' Udvikling</h2>
 
         <p>
@@ -55,6 +120,11 @@ import MainLayout from "../layouts/MainLayout.astro";
      
 
         <hr>
+
+    </article>
+
+        <section class="tre"></section>
+<article class="grid mx-auto container gap-8 pt-8 prose">
         <h2>Blues i Nutiden</h2>
 
         <p>
@@ -77,6 +147,21 @@ import MainLayout from "../layouts/MainLayout.astro";
         <hr>
 
     </article>
+          <section class="fire"></section>
+
+<article class="grid mx-auto container gap-8 pt-8 prose">
+        
+
+    <section class="footer">
+        <div class="container mx-auto text-center">
+            <p class="text-sm">&copy; 2024 Sjælens Musik. Alle rettigheder forbeholdes.</p>
+            
+            
+          </div>
+    </section>
+    
+        </article>
+
 
 
 
